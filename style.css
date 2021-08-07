@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    color: white;
 }
 body {
     box-sizing: border-box;
@@ -12,4 +13,19 @@ body {
     max-width: 1440px;
     background-image: url("images/bg-desktop.svg");
     background-color: var(--violet);
+}
+.info__heading {
+    font-family: "Poppins";
+    font-weight: 600;
+}
+.info__text {
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+.info__button {
+    font-family: "Poppins";
+    font-weight: 400;
+    background-color: var(--soft-magenta);
+    box-shadow: none;
+    border: none;
 }
