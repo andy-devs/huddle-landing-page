@@ -13,6 +13,13 @@ body {
     max-width: 1440px;
     background-image: url("images/bg-desktop.svg");
     background-color: var(--violet);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header"
+        "main .section"
+        "footer footer";
 }
 .info__heading {
     font-family: "Poppins";
