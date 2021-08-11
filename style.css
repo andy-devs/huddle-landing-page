@@ -12,7 +12,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    margin-bottom: 1rem;
+    padding: 1rem;
 }
 .preview {
     grid-area: preview;
@@ -41,12 +41,13 @@
 }
 .info__text {
     padding: 2rem 0;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: "Open Sans";
     font-weight: 400;
     line-height: 1.8rem;
 }
 .info__button {
+    font-size: 1rem;
     font-family: "Poppins";
     font-weight: 400;
     box-shadow: 5px 4px 7px 5px rgba(34, 60, 80, 0.2);
@@ -60,31 +61,43 @@
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
 }
 .info__button:hover {
     background-color: var(--soft-magenta);
+    box-shadow: 5px 4px 7px 5px rgba(34, 60, 80, 0.2);
     color: white;
 }
 .icons {
-    padding: 0 0 0 30rem;
     grid-area: footer;
-    width: 35%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+}
+.icon-a {
+    padding: 1rem;
 }
 .icon {
+    transition: 0.1s;
     transform: scale(2);
     -webkit-transform: scale(2);
     -moz-transform: scale(2);
     -ms-transform: scale(2);
     -o-transform: scale(2);
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
 }
 .icon:hover {
     color: var(--soft-magenta);
 }
 body {
     box-sizing: border-box;
-    min-height: 100vh;
+    height: 100%;
     display: grid;
     place-items: center;
     background-image: url("images/bg-desktop.svg");
@@ -95,10 +108,21 @@ main {
     min-height: 100vh;
     max-width: 1440px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 15% 75% 10%;
     grid-template-areas:
-        "header ."
-        "preview info"
-        ". footer";
+        "header . . ."
+        "preview preview info info"
+        ". . . footer";
+}
+@media (max-width: 1000px) {
+    body {
+        font-size: 5px;
+    }
+}
+@media (max-width: 700px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
 }
