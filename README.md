@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://github.com/andy-devs/huddle-landing-page)
--   Live Site URL: [Add live site URL here](https://andy-devs.github.io/huddle-landing-page/)
+-   Solution URL: [https://github.com/andy-devs/huddle-landing-page](https://github.com/andy-devs/huddle-landing-page)
+-   Live Site URL: [https://andy-devs.github.io/huddle-landing-page/](https://andy-devs.github.io/huddle-landing-page/)
 
 ## My process
 
